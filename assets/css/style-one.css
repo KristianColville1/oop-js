@@ -38,3 +38,16 @@ li > a:hover {
     font-size: 1.3rem;
     color: black;
 }
+
+/* testing form */
+.test-form {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: chartreuse;
+    transform: translate(12vh, 12vh);
+}
+
+.text-input {
+    width: 95%;
+}

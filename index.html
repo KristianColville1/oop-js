@@ -17,7 +17,19 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <form class="test-form" action="">
+            <label for="first-name">First name</label>
+            <input class="text-input" type="text" id="first-name" name="first-name">
+            <label for="last-name">Last name</label>
+            <input class="text-input" type="text" id="last-name" name="last-name">
+            <label for="email">Email</label>
+            <input class="text-input" type="email" id="email" name="email">
+            <label for="user-text">Your Message</label>
+            <textarea class="user-text" id="user-text" name="user-text"></textarea>
+            <button class="submit-button" type="submit" id="submit-button" name="submit" onclick="display()">Send</button>
+        </form>
+    </main>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
