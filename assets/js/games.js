@@ -28,5 +28,4 @@ var isInWindow = setInterval(function(){
     if(blockLeftPos == 1150){
         block.style.display = 'block';
     }
-
 }, 5);
