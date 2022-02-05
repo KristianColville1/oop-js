@@ -21,13 +21,46 @@
     margin: 0;
 }
 
+.animate-c {
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 550px;
+    }
+    30%{
+        top: 400px;
+    }
+    40%{
+        top: 425px;
+    }
+    90%{
+        top: 480px;
+    }
+    100%{
+        top: 550px;
+    }
+}
+
 #block {
     width: 50px;
     height: 50px;
     background-color: blueviolet;
     position: absolute;
     top: 600px;
-    left: 1148px;
+    left: 1150px;
     border: 2px solid peru;
     margin: 0;
+
+    animation: block 3s infinite linear;
+}
+
+@keyframes block {
+    0%{
+        left: 1150px;
+    }
+    100%{
+        left: -50px;
+    }
 }
