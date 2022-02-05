@@ -32,12 +32,6 @@
     30%{
         top: 400px;
     }
-    40%{
-        top: 425px;
-    }
-    90%{
-        top: 480px;
-    }
     100%{
         top: 550px;
     }
@@ -51,7 +45,7 @@
     top: 600px;
     left: 1150px;
     border: 2px solid peru;
-    margin: 0;
+    border-radius: 50%;
 
     animation: block 3s infinite linear;
 }
