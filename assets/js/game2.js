@@ -12,5 +12,35 @@ document.addEventListener("DOMContentLoaded", () => {
     // Solution Two: watch tutorials like an idiot
     // Solution Three: Code it ffs
 
-    
+    // Solution Three accepted.
+
+    // Game board:
+    // 9 red cubes
+    // 81 black cubes
+    // needs to change color when hovered over by user
+
+    // How the hell can you do this without knowing math..
+    // okay so we have the ability to create arrays and dictionaries...
+    // It might be easier to put the black cubes inside the red cubes creating a multidimensional array?
+
+    // width <- horizonal, height <- vertical
+
+
+    // width
+    // width
+
+    // begin with testing the ability to enter numbers 1 - 9 in just black cubes;
+
+    // select the elements we want to test
+    const redCubes = document.querySelectorAll('.grid-1 div');
+    const blackCubes = document.querySelectorAll('.grid-2 div');
+
+    // need variables for the different directions for the black and red cubes.
+    const blackWidth = 9;
+
+    function runGame(){
+
+    }
+
+    runGame();
 })
