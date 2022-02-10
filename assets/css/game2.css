@@ -36,3 +36,24 @@
     border: 1px solid black;
 }
 
+/* start and time */
+button.start {
+    height: 60px;
+    background-color: orange;
+    border: 5px solid blue;
+    border-style: outset;
+}
+
+button.start:active {
+    border-style: inset;
+}
+
+.count-down {
+    height: 50px;
+    width: 150px;
+    background: yellowgreen;
+}
+
+.number {
+    background-color: green;
+}
