@@ -10,15 +10,18 @@
     transform: translate(-50%, -50%);
 }
 
-
-
-
-
+.grid-1,
 .grid-2 {
     display: flex;
     flex-wrap: wrap;
     height: 468px;
     width: 468px;
+}
+
+.grid-1 div {
+    height: 151px;
+    width: 152px;
+    border: 2px solid red;
 }
 
 .grid-2 div {
