@@ -61,8 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // when game begins remove all the numbers on the board
         // blackCubesArray.forEach(index => blackCubes[index].classList.remove('number'));
 
-        // need to create 1-9 black cubes
-        blackCubesArray.forEach(index => blackCubes[index].classList.add('number'));
+        // need to create 1-81 black cubes
+        divText = 1;
+        blackCubes.innerText = divText;
+        blackCubesArray.forEach(index => blackCubes[index].innerText = divText++);
 
     }
 
