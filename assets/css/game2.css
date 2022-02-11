@@ -8,31 +8,27 @@
     transform: translate(-50%, -50%);
 }
 
-.container-1,
-.container-2 {
-    height:468px;
-    width: 468px;
+.grid-1 {
+    display: flex;
+    flex-wrap: wrap;
+    height:465px;
+    width: 465x;
     border: 1px solid black;
     position: absolute;
 }
 
-.grid-1,
-.grid-2 {
+
+.grid-1 div.number-box{
     display: flex;
     flex-wrap: wrap;
-    height: 468px;
-    width: 468px;
-}
-
-.grid-1 div {
-    height: 151px;
-    width: 152px;
+    height: 153px;
+    width: 153px;
     border: 2px solid red;
 }
 
-.grid-2 div {
-    height: 50px;
-    width: 50px;
+div.number-box div.number {
+    height: 49px;
+    width: 49px;
     border: 1px solid black;
 }
 
@@ -52,8 +48,4 @@ button.start:active {
     height: 50px;
     width: 150px;
     background: yellowgreen;
-}
-
-.number {
-    background-color: green;
 }
