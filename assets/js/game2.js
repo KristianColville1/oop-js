@@ -60,10 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
         69, 70, 71, 72, 73, 74, 
         75, 76, 77, 78, 79, 80]; // all positions 1 - 81
 
-    const possiblePositions = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    var currentNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    const possibleNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    var currentNumbers = [];
 
     function runGame(){
+        currentNumbers = []; // reset the array here 
+
+
+
         // when game begins remove all the numbers on the board
         // blackCubesArray.forEach(index => blackCubes[index].classList.remove('number'));
 
@@ -86,19 +90,28 @@ document.addEventListener("DOMContentLoaded", () => {
         //     blackCubes[num].innerText = randomNum;// divText++;
 
         // }
-
         for(let num = 0; num < totalPositions.length; num++){
+            // randomNum = Math.floor(Math.random() * 9 + 1);
+
             randomNum = Math.floor(Math.random() * 9 + 1);
-            if(randomNum > 9){
-                randomNum = 9;
-            } else if(randomNum < 1){
-                randomNum = 1;
+            // while r is in N 
+            // randomise the numbers
+            // if r is not in N then break loop and add to black cubes.
+            while(!currentNumbers.includes(randomNum)){
+                if(randomNum > 9){
+                    randomNum = 9;
+                } else if(randomNum < 1){
+                    randomNum = 1;
+                }
+                currentNumbers.push(randomNum);
+                
             }
 
             blackCubes[num].innerText = randomNum;// divText++;
 
         }
-
+        alert(currentNumbers); // I can confirm that the numbers 1 - 9 are correctly stored randomly.
+        
     }
 
     // current tasks:
