@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         75, 76, 77, 78, 79, 80]; // all positions 1 - 81
 
     const possiblePositions = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    var currentNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
     function runGame(){
         // when game begins remove all the numbers on the board
