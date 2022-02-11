@@ -18,7 +18,7 @@
 }
 
 
-.grid-1 div.number-box{
+.grid-1 div.number-box {
     display: flex;
     flex-wrap: wrap;
     height: 153px;

@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // begin with testing the ability to enter numbers 1 - 9 in just black cubes;
 
     // select the elements we want to test
-    const redCubes = document.querySelectorAll('.grid-1 div');
-    const blackCubes = document.querySelectorAll('.grid-2 div'); // black cubes same as numbers below
-    const currentNumber = document.querySelectorAll('.grid-2 div')
+    const redCubes = document.querySelectorAll('.number-box');
+    const blackCubes = document.querySelectorAll('.number'); // black cubes same as numbers below
+    const currentNumber = document.querySelectorAll('.number')
 
     // need variables for the different directions for the black and red cubes.
     const startButton = document.querySelector('.start');
     const lastIndex = 0;
     const length = 9;
     const width = 9;
-    let divText = '';
-    const blackCubesArray = [ 0,
+    let divText = 1;
+    const totalPositions = [ 0,
         1, 2, 3, 4, 5, 6, 7, 8,
         9, 10, 11, 12, 13, 14,
         15, 16, 17, 18, 19, 20, 
@@ -57,14 +57,34 @@ document.addEventListener("DOMContentLoaded", () => {
         69, 70, 71, 72, 73, 74, 
         75, 76, 77, 78, 79, 80]; // all positions 1 - 81
 
+    const possiblePositions = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+
     function runGame(){
         // when game begins remove all the numbers on the board
         // blackCubesArray.forEach(index => blackCubes[index].classList.remove('number'));
 
-        // need to create 1-81 black cubes
-        divText = 1;
-        blackCubes.innerText = divText;
-        blackCubesArray.forEach(index => blackCubes[index].innerText = divText++);
+        // need to create 1-9 numbers inside 1-9 red cubes
+
+        // for 81 positions every 9 positions reset divText to 1 
+        for(let num = 0; num < totalPositions.length; num++){
+
+            blackCubes[num].innerText = divText++;
+            if(divText > 9){
+                divText = 1;
+            }
+        }
+
+        // I have created a for loop which inputs the numbers 1 - 9 into each red cube.
+
+        // now I need to randomise the numbers and then make sure they increment properly in each direction of the array.
+        // we know its possible because the game exists.
+
+        // firstly lets make div text random between 1 - 9
+
+
+
+        
+        
 
     }
 
